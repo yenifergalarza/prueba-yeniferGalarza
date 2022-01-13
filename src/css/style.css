@@ -1,0 +1,301 @@
+    @font-face {
+        font-family: 'Roboto-Regular';
+        src: url(../assets/fonts/Roboto-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: 'Roboto-Bold';
+        src: url(../assets/fonts/Roboto-Bold.ttf);
+    }
+    
+    * {
+        font-family: 'Roboto-Regular';
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
+    
+    a:hover,
+    a {
+        color: #080809;
+        text-decoration: none;
+    }
+    
+    html {
+        font-size: 0.94vw;
+    }
+    
+    body {
+        border: 0;
+        margin: 0;
+    }
+    
+    .bck-grey {
+        background: grey;
+    }
+    
+    .text-dark {
+        color: #080809
+    }
+    
+    .text-white {
+        color: #f3f3f3
+    }
+    
+    .d-flex {
+        display: flex;
+    }
+    
+    .justify-centered {
+        justify-content: center;
+    }
+    
+    .navbar {
+        width: 100%;
+        height: 16rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    p {
+        font-size: 4.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .navbar-logo--img {
+        width: 10rem;
+    }
+    
+    .navbar-btn--img {
+        width: 10rem;
+    }
+    
+    .navbar-btn {
+        left: 4rem;
+        position: absolute;
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        width: 80%;
+        margin-top: 8rem;
+    }
+    
+    .btn {
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        color: white;
+        border-radius: 1.4rem;
+        font-family: 'HelveticaNeue-Italic';
+        font-size: 5rem;
+        border: none;
+        font-family: 'Roboto-Bold';
+    }
+    
+    .modal {
+        opacity: 0;
+        transition: opacity 0.3s;
+        position: absolute;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        top: auto;
+        z-index: 10;
+        margin: 10%;
+        flex-direction: column;
+    }
+    
+    .modal-close-btn {
+        align-self: end;
+        background: white;
+        border: none;
+        top: 2rem;
+        position: absolute;
+    }
+    
+    .overlay {
+        opacity: 0;
+        transition: opacity 0.4s;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.378);
+        display: none;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .anti-scroll {
+        overflow: hidden;
+    }
+    
+    .show {
+        opacity: 1;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal .navbar-menu {
+        font-size: 5rem;
+        flex-direction: column;
+        display: flex;
+        padding: 6rem;
+        text-align: center;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .modal .navbar-menu a {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-family: 'Roboto-Bold';
+    }
+    
+    @media (min-width: 540px) {
+        .navbar {
+            height: 12rem;
+        }
+        .navbar-btn--img {
+            width: 6rem;
+        }
+        .navbar-logo--img {
+            width: 8rem;
+        }
+        p {
+            font-size: 2.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+        }
+        .btn {
+            padding-top: 1.8rem;
+            padding-bottom: 1.8rem;
+            font-size: 2.8em;
+        }
+        .modal .navbar-menu {
+            font-size: 2.5rem;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .navbar-btn--img {
+            width: 5rem;
+        }
+        .navbar-logo--img {
+            width: 7rem;
+        }
+    }
+    
+    @media (min-width: 991px) {
+        .navbar {
+            height: 8rem;
+        }
+        .container {
+            margin-top: 4rem;
+        }
+        .btn {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            font-size: 1.6em;
+        }
+        .modal {
+            min-height: 80%;
+        }
+        .navbar {
+            height: 6rem;
+        }
+        .navbar-logo--img {
+            width: 4rem;
+        }
+        .navbar-btn--img {
+            width: 3rem;
+        }
+        .modal .navbar-menu {
+            font-size: 1.6em;
+            padding: 2rem;
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+        .modal .navbar-menu a {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .modal .navbar-menu {
+            padding: 0rem;
+            padding-left: 8rem;
+            padding-right: 8rem;
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+        .btn {
+            font-size: .6em;
+        }
+        .container {
+            margin-top: 2.6em;
+        }
+        .btn {
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+            padding-left: 2.6rem;
+            padding-right: 2.6rem;
+            font-size: 1.2em;
+            border-radius: .7rem;
+        }
+        .navbar {
+            height: 4rem;
+        }
+        .navbar-logo--img {
+            width: 2.5rem;
+        }
+        .navbar-btn--img {
+            display: none;
+        }
+        .modal {
+            max-width: 40rem;
+        }
+    }
+    
+    @media (min-width: 1440px) {
+        p {
+            font-size: 1.11rem;
+        }
+    }
